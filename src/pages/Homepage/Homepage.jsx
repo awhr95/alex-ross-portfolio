@@ -3,7 +3,7 @@ import "./Homepage.scss";
 function Homepage() {
   return (
     <>
-      <h1>Hello World!</h1>
+      <h1>Hello World! My site is Live!</h1>
     </>
   );
 }
