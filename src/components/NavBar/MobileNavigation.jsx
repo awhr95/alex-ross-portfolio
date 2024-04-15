@@ -9,24 +9,20 @@ const MobileNavigation = () => {
 
   const Close = (
     <MdClose
-      className="HamburgerMenu"
-      size="30px"
-      color="black"
+      className="mobile-nav__menu-close"
       onClick={() => setclick(!click)}
     />
   );
 
   const Hamburger = (
     <CiMenuBurger
-      className="HamburgerMenu"
-      size="30px"
-      color="black"
+      className="mobile-nav__menu"
       onClick={() => setclick(!click)}
     />
   );
   return (
-    <nav className="MobileNavigation">
-      <h3 className="name">{"< AR /> "}</h3>
+    <nav className="mobile-nav">
+      <h3 className="mobile-nav__logo">{"< AR /> "}</h3>
       {click ? Close : Hamburger}
       {click && <NavLinks />}
     </nav>

@@ -1,0 +1,16 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/resets" as *;
+
+.picture-container {
+  width: 10rem;
+  height: 12rem;
+  margin-left: auto;
+  margin-right: 2rem;
+
+  &__pic {
+    width: 100%;
+    border-radius: 50%;
+  }
+}

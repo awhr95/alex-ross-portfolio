@@ -25,14 +25,33 @@
   }
 }
 
-.MobileNavigation {
+.mobile-nav {
   display: flex;
-  height: 15vh;
-  align-items: baseline;
-  justify-content: space-evenly;
+  height: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: white;
+  margin: 2rem;
 
   @include tablet {
     display: none;
+  }
+
+  &__logo {
+    font-size: 1.875rem;
+    margin: 0;
+  }
+
+  &__menu {
+    height: 1.875rem;
+    width: 2rem;
+    color: black;
+  }
+  &__menu-close {
+    height: 1.875rem;
+    width: 2rem;
+    color: black;
   }
 }
 
@@ -52,12 +71,13 @@
   @include tablet {
     top: 0;
     border-top: 0;
-    height: 15vh;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 50%;
     align-items: baseline;
+    background-color: none;
   }
 
   &__link {
@@ -67,7 +87,7 @@
   }
 
   &__link:hover {
-    color: white;
+    color: $primary-coulour-alternate;
     transition: 0.3s;
   }
 }
