@@ -1,0 +1,48 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/resets" as *;
+
+.hero {
+  padding: 1rem;
+
+  &__picture-container {
+    width: 11rem;
+    height: 10rem;
+    padding-right: 0rem;
+    margin-left: auto;
+  }
+  &__pic {
+    width: 100%;
+    border-radius: 48%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &__text {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin: 0;
+
+    padding-bottom: 2rem;
+  }
+  &__subtitle {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+  }
+
+  &__icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  &__icon {
+    padding: 0rem 0.3rem 0.3rem 0.3rem;
+  }
+}

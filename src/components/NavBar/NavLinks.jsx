@@ -8,7 +8,7 @@ const NavLinks = () => {
         ./About
       </NavLink>
       <NavLink className="NavLinks__link" to="#">
-        ./Projects
+        ./Portfolio
       </NavLink>
       <NavLink className="NavLinks__link" to="#">
         ./Experience

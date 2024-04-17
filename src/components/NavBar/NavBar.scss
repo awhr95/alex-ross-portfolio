@@ -27,29 +27,30 @@
 
 .mobile-nav {
   display: flex;
-  height: 5rem;
+  height: 2rem;
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
   background-color: white;
-  margin: 2rem;
+  margin: 2rem 1rem;
 
   @include tablet {
     display: none;
   }
 
   &__logo {
-    font-size: 1.875rem;
+    font-size: 1rem;
     margin: 0;
+    font-style: italic;
   }
 
   &__menu {
-    height: 1.875rem;
+    height: 1rem;
     width: 2rem;
     color: black;
   }
   &__menu-close {
-    height: 1.875rem;
+    height: 1rem;
     width: 2rem;
     color: black;
   }
@@ -60,11 +61,11 @@
   flex-direction: column;
   justify-content: space-evenly;
   position: absolute;
-  border-top: 3px solid orange;
-  top: 15vh;
-  right: 0;
-  height: 50vh;
-  width: 100%;
+  border-top: 3px solid $primary-colour;
+  top: 12vh;
+  /* right: 0; */
+  height: 25vh;
+  width: 14rem;
   align-items: baseline;
   background-color: white;
 
