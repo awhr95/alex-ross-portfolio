@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const FooterNav = () => {
   return (
     <section className="footer-nav">
-      <Link>About</Link>
-      <Link>Portfolio</Link>
-      <Link>Experience</Link>
-      <Link>Contact</Link>
+      <Link to="#">About</Link>
+      <Link to="#">Portfolio</Link>
+      <Link to="#">Experience</Link>
+      <Link to="#">Contact</Link>
     </section>
   );
 };
