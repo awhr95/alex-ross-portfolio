@@ -13,7 +13,7 @@ import MySQL from "../../assets/icons/logos--mysql.svg";
 const Techstack = () => {
   return (
     <section className="techstack">
-      <p className="techstack__subtitle">My tech stack:</p>
+      <h3 className="techstack__subtitle">My tech stack:</h3>
       <section className="techstack__icon-container">
         <a href="https://www.html.com" className="techstack__stack-link">
           <figure className="techstack__figures">
