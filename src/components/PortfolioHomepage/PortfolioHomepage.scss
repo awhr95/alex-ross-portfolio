@@ -1,0 +1,27 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/resets" as *;
+
+.portfolio {
+  padding: 0 1rem;
+
+  &__subtitle {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    width: 15rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease;
+  }
+
+  &__link:hover {
+    transform: scale(1.1);
+  }
+}

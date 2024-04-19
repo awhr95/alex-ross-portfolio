@@ -4,9 +4,9 @@
 @use "../../styles/partials/variables" as *;
 
 .techstack {
-  padding: 0 1rem;
+  padding: 1rem 1rem;
+  background-color: white;
   &__subtitle {
-    margin-top: 2rem;
     font-size: 0.8rem;
   }
 
@@ -31,6 +31,12 @@
     padding: 0.5rem 0.5rem;
     border-radius: 0.5rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+
+  &__figures:hover {
+    background-color: rgb(253, 243, 243);
+    transform: scale(1.05);
   }
 
   &__stack-link {
