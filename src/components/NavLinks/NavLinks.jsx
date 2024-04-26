@@ -4,6 +4,9 @@ import { NavLink } from "react-router-dom";
 const NavLinks = () => {
   return (
     <nav className="NavLinks">
+      <NavLink className="NavLinks__link" to="/">
+        ./Homepage
+      </NavLink>
       <NavLink className="NavLinks__link" to="/about">
         ./About
       </NavLink>
