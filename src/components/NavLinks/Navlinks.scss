@@ -1,0 +1,74 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.NavLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  border-top: 2px solid #868b8e;
+  top: 2rem;
+  right: 0;
+  height: 24vh;
+  width: 9rem;
+  align-items: baseline;
+  background-color: white;
+
+  @include tablet {
+    top: 2rem;
+    border-top: 0;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: baseline;
+    background-color: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: bold;
+    color: $primary-coulour-alternate;
+    position: relative;
+    transition: color 0.3s ease;
+    padding-bottom: 0.5rem;
+    &.active {
+      color: black;
+      padding-bottom: 0.3rem;
+      border-bottom: 2px black solid;
+      transition: none;
+      transform: none;
+      &::after {
+        transition: none;
+      }
+      &:hover {
+        &::after {
+          width: 0;
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: black;
+      transform-origin: left;
+      transition: width 0.3s ease; /* Transition width */
+    }
+
+    &:hover {
+      color: black;
+
+      &::after {
+        width: 100%; /* Expand width on hover */
+      }
+    }
+  }
+}

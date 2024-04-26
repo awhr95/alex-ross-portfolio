@@ -7,13 +7,13 @@ import Footer from "../../components/Footer/Footer";
 
 function Homepage() {
   return (
-    <>
+    <main className="homepage">
       <Header />
       <Hero />
       <Techstack />
       <PortfolioHomepage />
       <Footer />
-    </>
+    </main>
   );
 }
 
