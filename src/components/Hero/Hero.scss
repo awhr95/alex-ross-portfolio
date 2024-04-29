@@ -4,7 +4,7 @@
 @use "../../styles/partials/resets" as *;
 
 .hero {
-  padding: 5rem 1rem 0 1rem;
+  padding: 7rem 1rem 0 1rem;
 
   @include tablet {
     padding: 12rem 8rem 0 8rem;

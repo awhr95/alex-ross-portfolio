@@ -1,0 +1,21 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/resets" as *;
+
+.code {
+  &__mobile {
+    display: block;
+  }
+  &__desktop {
+    display: none;
+  }
+  @include tablet {
+    &__mobile {
+      display: none;
+    }
+    &__desktop {
+      display: block;
+    }
+  }
+}
