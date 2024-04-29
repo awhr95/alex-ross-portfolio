@@ -1,5 +1,5 @@
 import NavLinks from "../NavLinks/NavLinks";
-import "./NavBar.scss";
+import "./MobileNav.scss";
 import { CiMenuBurger } from "react-icons/ci";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";

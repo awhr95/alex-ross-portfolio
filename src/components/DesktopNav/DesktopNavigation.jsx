@@ -1,5 +1,5 @@
 import NavLinks from "../NavLinks/NavLinks";
-import "./NavBar.scss";
+import "./DesktopNav.scss";
 
 const DesktopNavigation = () => {
   return (

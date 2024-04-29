@@ -1,5 +1,6 @@
 import "./Navlinks.scss";
 import { NavLink } from "react-router-dom";
+import download from "../../assets/icons/material-symbols-light--download.svg";
 
 const NavLinks = () => {
   return (
@@ -19,6 +20,13 @@ const NavLinks = () => {
       <NavLink className="NavLinks__link" to="/contact">
         ./Contact
       </NavLink>
+      <a
+        className="NavLinks__cv"
+        href="/alex-ross-cv.pdf"
+        download="alex-ross-cv.pdf"
+      >
+        ./CV <img className="NavLinks__download" src={download} />
+      </a>
     </nav>
   );
 };
