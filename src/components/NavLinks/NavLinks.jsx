@@ -25,7 +25,8 @@ const NavLinks = () => {
         href="/alex-ross-cv.pdf"
         download="alex-ross-cv.pdf"
       >
-        ./CV <img className="NavLinks__download" src={download} />
+        ./CV{" "}
+        <img alt="download" className="NavLinks__download" src={download} />
       </a>
     </nav>
   );
