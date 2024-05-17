@@ -5,12 +5,19 @@
 
 .techstack {
   padding: 1rem 1rem;
-  background-color: white;
+  background-color: #1e1e1e;
+
   &__subtitle {
     font-size: 0.8rem;
+    color: white;
   }
 
   &__icon-container {
+    background-image: url("../../assets/imgs/TechStackCode.png");
+    background-repeat: no-repeat;
+  }
+
+  &__icon-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

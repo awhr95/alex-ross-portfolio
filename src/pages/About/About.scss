@@ -6,6 +6,19 @@
 .code {
   &__mobile {
     display: block;
+    padding-top: 7rem;
+  }
+
+  &__mobile-glass {
+    position: absolute;
+    width: 100%;
+    height: 15rem;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
   &__desktop {
     display: none;
@@ -15,7 +28,13 @@
       display: none;
     }
     &__desktop {
-      display: block;
+      display: contents;
     }
+  }
+}
+
+.about {
+  &__title {
+    color: white;
   }
 }
