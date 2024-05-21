@@ -12,7 +12,7 @@ const Footer = () => {
       <a href="https://www.linkedin.com/in/alex-ross95/">
         <img className="footer__icon" src={Linkedin} alt="React icon" />
       </a>
-      <a href="mailto: info@travelsite.com">
+      <a href="mailto: awhr95@gmail.com">
         <img className="footer__icon" src={Email} alt="Sass icon" />
       </a>
     </section>

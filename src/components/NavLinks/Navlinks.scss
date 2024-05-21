@@ -61,14 +61,14 @@
       left: 0;
       background-color: black;
       transform-origin: left;
-      transition: width 0.3s ease; /* Transition width */
+      transition: width 0.3s ease;
     }
 
     &:hover {
       color: black;
 
       &::after {
-        width: 100%; /* Expand width on hover */
+        width: 100%;
       }
     }
   }
@@ -76,7 +76,11 @@
   &__cv {
     text-decoration: none;
     color: white;
-    background: linear-gradient(180deg, #0387f5, #0a1a85 7rem);
+    background: linear-gradient(
+      180deg,
+      #3d8bca,
+      $primary-coulour-alternate 2rem
+    );
     width: 8rem;
     border-radius: 0.25rem;
     padding: 0.3rem;
