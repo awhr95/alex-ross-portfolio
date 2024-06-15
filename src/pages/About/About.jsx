@@ -8,14 +8,11 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 function About() {
   const codeString = `
-  import { geographyAndPlanning, upperSecondClass } from "newcastleUniversity";
-  import { fullStackDeveloperDiploma } from "brainStationLondon";
-  
   const coder = {
       name: "Alex Ross",
       age: 30,
       skills: ["HTML", "CSS", "SASS", "Javascript", "React", "Node.js", "Express", "Knex", "MySQL", "Git"],
-      hobbies: ["Reading anything and everything", "Running (slowly)", "Skiing (sometimes in control)", "Cooking (for anyone brave enough)"],
+      hobbies: ["Reading anything and everything", "Running (slowly)", "Skiing (fast)", "Cooking (for anyone brave enough)"],
       problemSolver: true,
       hardWorker: true,
       quickLearner: true,

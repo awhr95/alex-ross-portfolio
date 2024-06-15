@@ -43,14 +43,19 @@ const PortfolioHomepage = () => {
       src: Leaderboard,
     },
   ];
+
   return (
     <section className="portfolio">
-      <h3 className="portfolio__subtitle">My portfolio of work:</h3>
+      <h3 className="portfolio__subtitle">My projects:</h3>
       <article className="portfolio__project">
         <h2 className="portfolio__title">NList</h2>
         <p className="portfolio__description">
           NList is a place to discover and promote volunteering opportunities.
           The 'air-bnb' of volunteering.
+        </p>
+        <p className="portfolio__description">
+          NList was built over 2 weeks as a full stack application with a react
+          front end, a node & express backend with a fully implemented database.
         </p>
         <button className="portfolio__button" onClick={toggleDetails}>
           {" "}
