@@ -1,6 +1,9 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
 import "./TechStack.scss";
+import "aos/dist/aos.css";
 import HTML from "../../assets/icons/skill-icons--html.svg";
-import React from "../../assets/icons/skill-icons--react-dark.svg";
+import ReactIcon from "../../assets/icons/skill-icons--react-dark.svg";
 import Sass from "../../assets/icons/skill-icons--sass.svg";
 import Javascript from "../../assets/icons/skill-icons--javascript.svg";
 import CSS from "../../assets/icons/skill-icons--css.svg";
@@ -9,79 +12,120 @@ import Git from "../../assets/icons/skill-icons--git.svg";
 import Express from "../../assets/icons/skill-icons--expressjs-light.svg";
 import Knex from "../../assets/icons/devicon--knexjs-wordmark.svg";
 import MySQL from "../../assets/icons/logos--mysql.svg";
+import TypeScriptIcon from "../../assets/icons/skill-icons--typescript.svg";
+import Tailwind from "../../assets/icons/skill-icons--tailwindcss-dark.svg";
+import GoLang from "../../assets/icons/skill-icons--golang.svg";
+import Python from "../../assets/icons/logos--python.svg";
 
-const Techstack = () => {
+const TechStack = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
+
+  const techStack = [
+    { title: "HTML", link: "https://www.html.com", icon: HTML },
+    {
+      title: "CSS",
+      link: "https://www.w3schools.com/css/css_intro.asp",
+      icon: CSS,
+    },
+    { title: "React", link: "https://react.dev/", icon: ReactIcon },
+    { title: "Sass", link: "https://sass-lang.com/", icon: Sass },
+
+    {
+      title: "JavaScript",
+      link: "https://www.javascript.com",
+      icon: Javascript,
+    },
+    { title: "Node.js", link: "https://nodejs.org", icon: Node },
+    { title: "Git", link: "https://git-scm.com", icon: Git },
+    { title: "Express.js", link: "https://expressjs.com", icon: Express },
+    { title: "Knex.js", link: "http://knexjs.org", icon: Knex },
+    { title: "MySQL", link: "https://www.mysql.com", icon: MySQL },
+  ];
+  const learning = [
+    {
+      title: "TypeScript",
+      link: "https://www.typescriptlang.org/",
+      icon: TypeScriptIcon,
+    },
+    { title: "Tailwind", link: "https://tailwindcss.com/", icon: Tailwind },
+    { title: "Go", link: "https://go.dev/", icon: GoLang },
+    {
+      title: "Python",
+      link: "https://python.org/",
+      icon: Python,
+    },
+  ];
+
   return (
     <section className="techstack">
-      <h3 className="techstack__subtitle">My tech stack:</h3>
-      <section className="techstack__icon-container">
-        <a href="https://www.html.com" className="techstack__stack-link">
-          <figure className="techstack__figures">
-            <img className="techstack__icon" src={HTML} alt="Html icon" />
-            <figcaption className="techstack__caption">HTML</figcaption>
-          </figure>
-        </a>
-
-        <a
-          href="https://www.w3schools.com/css/css_intro.asp"
-          className="techstack__stack-link"
-        >
-          <figure className="techstack__figures">
-            <img className="techstack__icon" src={CSS} alt="CSS icon" />
-            <figcaption className="techstack__caption">CSS</figcaption>
-          </figure>
-        </a>
-        <a href="https://sass-lang.com/" className="techstack__stack-link">
-          <figure className="techstack__figures">
-            <img className="techstack__icon" src={Sass} alt="Sass icon" />
-            <figcaption className="techstack__caption">SASS</figcaption>
-          </figure>
-        </a>
-        <a href="https://www.javascript.com/" className="techstack__stack-link">
-          <figure className="techstack__figures">
-            <img className="techstack__icon" src={Javascript} alt="Html icon" />
-            <figcaption className="techstack__caption">JavaScript</figcaption>
-          </figure>
-        </a>
-        <a href="https://react.dev/" className="techstack__stack-link">
-          <figure className="techstack__figures">
-            <img className="techstack__icon" src={React} alt="React icon" />
-            <figcaption className="techstack__caption">React</figcaption>
-          </figure>
-        </a>
-        <a href="https://nodejs.org/en" className="techstack__stack-link">
-          <figure className="techstack__figures">
-            <img className="techstack__icon" src={Node} alt="Node.js icon" />
-            <figcaption className="techstack__caption">Node.js</figcaption>
-          </figure>
-        </a>
-        <a href="https://expressjs.com/" className="techstack__stack-link">
-          <figure className="techstack__figures">
-            <img className="techstack__icon" src={Express} alt="Express icon" />
-            <figcaption className="techstack__caption"> Express</figcaption>
-          </figure>
-        </a>
-        <a href="https://knexjs.org/" className="techstack__stack-link">
-          <figure className="techstack__figures">
-            <img className="techstack__icon" src={Knex} alt="Knex icon" />
-            <figcaption className="techstack__caption">Knex</figcaption>
-          </figure>
-        </a>
-        <a href="https://www.mysql.com/" className="techstack__stack-link">
-          <figure className="techstack__figures">
-            <img className="techstack__icon" src={MySQL} alt="MySQL icon" />
-            <figcaption className="techstack__caption">MySQL</figcaption>
-          </figure>
-        </a>
-        <a href="https://git-scm.com/" className="techstack__stack-link">
-          <figure className="techstack__figures">
-            <img className="techstack__icon" src={Git} alt="Git icon" />
-            <figcaption className="techstack__caption">Git</figcaption>
-          </figure>
-        </a>
-      </section>
+      <div className="techstack__icon-container">
+        <div className="techstack__title-container">
+          <h3 className="techstack__title">Core tech stack:</h3>
+        </div>
+        <section className="techstack__icon-section">
+          {techStack.map((item, index) => {
+            return (
+              <figure
+                key={index}
+                className="techstack__figures"
+                data-aos="fade-in"
+              >
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="techstack__link"
+                >
+                  <img
+                    className="techstack__icon"
+                    src={item.icon}
+                    alt={`${item.title} icon`}
+                  />
+                  <figcaption className="techstack__caption">
+                    {item.title}
+                  </figcaption>
+                </a>
+              </figure>
+            );
+          })}
+        </section>
+      </div>
+      <div className="techstack__icon-container">
+        <div className="techstack__title-container">
+          <h3 className="techstack__title--white">What I'm learning:</h3>
+        </div>
+        <section className="techstack__icon-section">
+          {learning.map((item, index) => {
+            return (
+              <figure
+                key={index}
+                className="techstack__figures"
+                data-aos="fade-in"
+              >
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="techstack__link"
+                >
+                  <img
+                    className="techstack__icon"
+                    src={item.icon}
+                    alt={`${item.title} icon`}
+                  />
+                  <figcaption className="techstack__caption">
+                    {item.title}
+                  </figcaption>
+                </a>
+              </figure>
+            );
+          })}
+        </section>
+      </div>
     </section>
   );
 };
 
-export default Techstack;
+export default TechStack;

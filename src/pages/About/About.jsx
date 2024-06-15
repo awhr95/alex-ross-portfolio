@@ -3,52 +3,55 @@ import "./About.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import PdfViewer from "../../components/PdfViewer/PdfViewer";
-import CodeSnippet from "../../components/CodeSnippet/CodeSnippet";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 function About() {
-  const code = `import { alexanderRoss, geographyAndPlanning, upperSecondClass } from "newcastleUniversity";
-  import { alexanderRoss, fullStackDeveloperDiploma } from "brainStationLondon";
-  
+  const codeString = `
   const coder = {
       name: "Alex Ross",
       age: 30,
-      skills: ["HTML", "CSS", "SASS", "Javascript", "React", 
-      "Node.js", "Express", "Knex", "MySQL", "Git"],
-      hobbies: ["Reading anything and everything", 
-      "Running (slow but far)", "Skiing (mostly in control)", 
-      "Cooking for anyone brave enough"],
+      skills: ["HTML", "CSS", "SASS", "Javascript", "React", "Node.js", "Express", "Knex", "MySQL", "Git"],
+      hobbies: ["Reading anything and everything", "Running (slowly)", "Skiing (fast)", "Cooking (for anyone brave enough)"],
       problemSolver: true,
       hardWorker: true,
       quickLearner: true,
-      communicator: true,
       hireablility: function() {
         return(
           this.problemSolver &&
           this.hardWorker &&
           this.quickLearner &&
-          this.communicator &&
+          this.skills.length >= 5
               )
          };
-  };
-
-  developerProfile.introduce();`;
-
+  };`;
   return (
     <>
       <Header />
       <section className="code__mobile">
-        <CodeSnippet
-          code={code}
-          language={"javascript"}
-          showLineNumbers={false}
-        />
+        <div className="code__mobile-box">
+          <SyntaxHighlighter
+            language="javascript"
+            style={vscDarkPlus}
+            wrapLongLines={true}
+          >
+            {codeString}
+          </SyntaxHighlighter>
+        </div>
+        <div className="code__mobile-glass">
+          <div className="about">
+            <h1 className="about__title">About</h1>
+          </div>
+        </div>
       </section>
       <section className="code__desktop">
-        <CodeSnippet
-          code={code}
-          language={"javascript"}
-          showLineNumbers={true}
-        />
+        <SyntaxHighlighter
+          language="javascript"
+          style={vscDarkPlus}
+          wrapLines={true}
+        >
+          {codeString}
+        </SyntaxHighlighter>
       </section>
       <PdfViewer />
       <Footer />

@@ -26,7 +26,11 @@ const NavLinks = () => {
         download="alex-ross-cv.pdf"
       >
         ./CV{" "}
-        <img alt="download" className="NavLinks__download" src={download} />
+        <img
+          className="NavLinks__download"
+          src={download}
+          alt="download button"
+        />
       </a>
     </nav>
   );

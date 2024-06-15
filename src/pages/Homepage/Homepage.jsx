@@ -1,7 +1,7 @@
 import Header from "../../components/Header/Header";
 import "./Homepage.scss";
 import Hero from "../../components/Hero/Hero";
-import Techstack from "../../components/TechStack/TechStack";
+import TechStack from "../../components/TechStack/TechStack";
 import PortfolioHomepage from "../../components/PortfolioHomepage/PortfolioHomepage";
 import Footer from "../../components/Footer/Footer";
 
@@ -10,7 +10,7 @@ function Homepage() {
     <main className="homepage">
       <Header />
       <Hero />
-      <Techstack />
+      <TechStack />
       <PortfolioHomepage />
       <Footer />
     </main>
