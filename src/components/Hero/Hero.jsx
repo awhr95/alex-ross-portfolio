@@ -13,7 +13,7 @@ const Hero = () => {
             <img alt="" className="hero__pic" src={Alex} />
           </div>
         </section>
-        <div className="hero__leftside">
+        <div className="hero__moving-text">
           <section className="hero__text-container">
             <p className="hero__text">Hi, I'm</p>
             <h1 className="hero__title">
