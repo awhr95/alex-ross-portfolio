@@ -59,22 +59,25 @@ const Hero = () => {
         <section className="hero__contact">
           <p className="hero__text">Alex Ross</p>
           <p className="hero__text">
+            email:
             <a className="hero__link" href="mailto: awhr95@gmail.com">
-              email
+              awhr95@gmail.com
             </a>
           </p>
           <p className="hero__text">
             {" "}
+            linkedin:
             <a
               className="hero__link"
               href="https://www.linkedin.com/in/alex-ross95/"
             >
-              linkedin
+              linkedin.com/alex-ross95
             </a>
           </p>
           <p className="hero__text">
+            github:
             <a className="hero__link" href="https://github.com/awhr95">
-              github
+              github.com/awhr95
             </a>
           </p>
         </section>
