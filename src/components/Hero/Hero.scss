@@ -4,11 +4,8 @@
 @use "../../styles/partials/resets" as *;
 
 .hero {
-  // padding: 7rem 1rem 1rem 1rem;
-  // box-shadow: inset 0px -5px 11px 5px #d1d4d1;
-
+  background-color: $secondary-colour;
   @include tablet {
-    // padding: 8rem 8rem 2rem 8rem;
     height: 90vh;
     padding-top: 6rem;
     display: flex;
@@ -16,15 +13,10 @@
     max-width: 1280px;
   }
 
-  // @include desktop {
-  //   // padding: 10rem 8rem 2rem 8rem;
-  // }
-
   &__top {
     @include tablet {
       display: flex;
       width: 100%;
-      // flex-direction: row-reverse;
     }
   }
   &__mobile-img {
@@ -44,7 +36,7 @@
   }
   &__pic {
     animation: fadeInSlideIn 1s;
-    width: 100%;
+    width: 20rem;
     border-radius: 50%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 
@@ -66,10 +58,10 @@
   &__content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 3rem;
+    align-items: flex-start;
+    gap: 2rem;
     width: 100%;
-    // justify-content: space-between;
+    padding-left: 10%;
   }
 
   &__blurb {
@@ -90,7 +82,7 @@
     @include tablet {
       display: flex;
       color: black;
-      width: 30%;
+      width: 90%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -117,7 +109,7 @@
 
   &__link {
     text-decoration: none;
-    color: black;
+    color: $primary-coulour-alternate;
   }
 }
 
