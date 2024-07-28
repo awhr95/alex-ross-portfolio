@@ -37,7 +37,7 @@ const Hero = () => {
           </section>
           <section className="hero__blurb">
             <p className="hero__text">
-              You have arrived! I’m Alex and welcome to my portfolio website!
+              I’m Alex and welcome to my portfolio website!
             </p>
             <p className="hero__text">
               I'm a London based full stack software engineer passionate about
