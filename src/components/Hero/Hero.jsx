@@ -44,9 +44,10 @@ const Hero = () => {
               designing and building applications people love using...{" "}
             </p>
             <p className="hero__text">
-              Here’s <Link>NList</Link>, the ‘Airbnb’ of volunteering that I
-              have built to encourage more giving in the world....you can see
-              more of examples of my work below.
+              Here’s <Link className="hero__text-link">NList</Link>, the
+              ‘Airbnb’ of volunteering that I have built to encourage more
+              giving in the world....you can see more of examples of my work
+              below.
             </p>
           </section>
         </div>
