@@ -94,7 +94,7 @@ const TechStack = () => {
       </div>
       <div className="techstack__icon-container">
         <div className="techstack__title-container">
-          <h3 className="techstack__title--white">What I'm learning:</h3>
+          <h3 className="techstack__title">What I'm learning:</h3>
         </div>
         <section className="techstack__icon-section">
           {learning.map((item, index) => {

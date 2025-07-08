@@ -11,12 +11,12 @@ const NavLinks = () => {
       <NavLink className="NavLinks__link" to="/about">
         ./About
       </NavLink>
-      <NavLink className="NavLinks__link" to="/portfolio">
+      {/* <NavLink className="NavLinks__link" to="/portfolio">
         ./Portfolio
-      </NavLink>
-      <NavLink className="NavLinks__link" to="/experience">
+      </NavLink> */}
+      {/* <NavLink className="NavLinks__link" to="/experience">
         ./Experience
-      </NavLink>
+      </NavLink> */}
       <NavLink className="NavLinks__link" to="/contact">
         ./Contact
       </NavLink>
