@@ -6,9 +6,27 @@
 .portfolio {
   padding: 0 1rem;
 
+  &__container {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+
   &__subtitle {
+    padding: 1rem 0rem 1rem 4rem;
     margin-top: 2rem;
     font-size: 1.5rem;
+  }
+  &__title {
+    padding: 1rem 0rem 1rem 5rem;
+    font-size: 2.5rem;
+  }
+  &__description {
+    padding: 0 0 0 6rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  &__button {
+    margin: 0 0 0 6rem;
   }
 
   &__link {

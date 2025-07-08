@@ -46,59 +46,62 @@ const PortfolioHomepage = () => {
 
   return (
     <section className="portfolio">
-      <h3 className="portfolio__subtitle">My projects:</h3>
-      <article className="portfolio__project">
-        <h2 className="portfolio__title">NList</h2>
-        <p className="portfolio__description">
-          NList is a place to discover and promote volunteering opportunities.
-          The 'air-bnb' of volunteering.
-        </p>
-        <p className="portfolio__description">
-          NList was built over 2 weeks as a full stack application with a react
-          front end, a node & express backend with a fully implemented database.
-        </p>
-        <button className="portfolio__button" onClick={toggleDetails}>
-          {" "}
-          {!showDetails ? "./Project_Details" : "./Hide_Details"}
-        </button>
-        {showDetails && (
-          <section>
-            <p className="portfolio__description">
-              Front end: React, Sass, MapBox
-            </p>
-            <p className="portfolio__description">
-              Back end: Node, Express, Knex, JSON Web Token
-            </p>
-            <p className="portfolio__description">
-              Project Management: Figma, Jira, Git
-            </p>
-          </section>
-        )}
+      <div className="portfolio__container">
+        <h3 className="portfolio__subtitle">My projects:</h3>
+        <article className="portfolio__project">
+          <h2 className="portfolio__title">NList</h2>
+          <p className="portfolio__description">
+            NList is a place to discover and promote volunteering opportunities.
+            The 'air-bnb' of volunteering.
+          </p>
+          <p className="portfolio__description">
+            NList was built over 2 weeks as a full stack application with a
+            react front end, a node & express backend with a fully implemented
+            database.
+          </p>
+          <button className="portfolio__button" onClick={toggleDetails}>
+            {" "}
+            {!showDetails ? "./Project_Details" : "./Hide_Details"}
+          </button>
+          {showDetails && (
+            <section>
+              <p className="portfolio__description">
+                Front end: React, Sass, MapBox
+              </p>
+              <p className="portfolio__description">
+                Back end: Node, Express, Knex, JSON Web Token
+              </p>
+              <p className="portfolio__description">
+                Project Management: Figma, Jira, Git
+              </p>
+            </section>
+          )}
 
-        <ImgCarousel images={NListImages} />
-        <a
-          className="portfolio__link"
-          href="https://github.com/awhr95/Capstone-nlist-client"
-        >
-          <p className="portfolio__link-text">Guithub Link</p>
-        </a>
-      </article>
-      <article>
-        <h2 className="portfolio__title">Back of the Net</h2>
-        <p className="portfolio__description">
-          A 24hr hackathon project - A football quiz, can you name tope scorers
-          in all of Europes top 5 leagues??.
-        </p>
-        <ImgCarousel images={BackOfTheNet} />
+          <ImgCarousel images={NListImages} />
+          <a
+            className="portfolio__link"
+            href="https://github.com/awhr95/Capstone-nlist-client"
+          >
+            <p className="portfolio__link-text">Guithub Link</p>
+          </a>
+        </article>
+        <article>
+          <h2 className="portfolio__title">Back of the Net</h2>
+          <p className="portfolio__description">
+            A 24hr hackathon project - A football quiz, can you name tope
+            scorers in all of Europes top 5 leagues??.
+          </p>
+          <ImgCarousel images={BackOfTheNet} />
 
-        <a
-          className="portfolio__link"
-          href="https://github.com/awhr95/Capstone-nlist-client"
-        >
-          Guithub Link
-        </a>
-      </article>
-      <p className="portfolio__link-text">Guithub Link</p>
+          <a
+            className="portfolio__link"
+            href="https://github.com/awhr95/Capstone-nlist-client"
+          >
+            Guithub Link
+          </a>
+        </article>
+        <p className="portfolio__link-text">Guithub Link</p>
+      </div>
     </section>
   );
 };
