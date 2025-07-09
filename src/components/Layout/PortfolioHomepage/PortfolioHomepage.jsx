@@ -1,4 +1,3 @@
-import ImgCarousel from "../ImgCarousel/ImgCarousel";
 import "./PortfolioHomepage.scss";
 import Homepage from "../../../assets/imgs/Homepage.png";
 import Map from "../../../assets/imgs/Map.png";
@@ -8,15 +7,9 @@ import Gameplay from "../../../assets/imgs/backofthenet/Gameplay.png";
 import SelectLeague from "../../../assets/imgs/backofthenet/SelectLeague.png";
 import Winner from "../../../assets/imgs/backofthenet/Winnercrop.png";
 import Leaderboard from "../../../assets/imgs/backofthenet/Leaderboard.png";
-import React, { useState } from "react";
+import Project from "../Project/Project";
 
 const PortfolioHomepage = () => {
-  const [showDetails, setShowDetails] = useState(false);
-
-  const toggleDetails = () => {
-    setShowDetails(!showDetails);
-  };
-
   const NListImages = [
     {
       src: Homepage,
@@ -46,91 +39,38 @@ const PortfolioHomepage = () => {
 
   return (
     <section className="portfolio">
-      <div className="portfolio__container">
-        <h3 className="portfolio__subtitle">My projects:</h3>
-        <article className="portfolio__project">
-          <h2 className="portfolio__title">NList</h2>
-          <p className="portfolio__description">
-            NList is a place to discover and promote volunteering opportunities.
-            The 'air-bnb' of volunteering. I originally built this over a two
-            weeks for my 'Capstone Project' at the end of my coding bootcamp. It
-            is a full stack application with a react front end, a node & express
-            backend with a fully implemented database.
-          </p>
-          <p className="portfolio__description">
-            NList was built over 2 weeks as a full stack application with a
-            react front end, a node & express backend with a fully implemented
-            database.
-          </p>
-          <section className="portfolio__details-container">
-            <div className="portfolio__details">
-              <button className="portfolio__button" onClick={toggleDetails}>
-                {" "}
-                {!showDetails ? "./Project_Details" : "./Hide_Details"}
-              </button>
-              {showDetails && (
-                <section>
-                  <p className="portfolio__description">
-                    Front end: React, Sass, MapBox
-                  </p>
-                  <p className="portfolio__description">
-                    Back end: Node, Express, Knex, JSON Web Token
-                  </p>
-                  <p className="portfolio__description">
-                    Project Management: Figma, Jira, Git
-                  </p>
-                </section>
-              )}
-              <a
-                className="portfolio__link"
-                href="https://github.com/awhr95/Capstone-nlist-client"
-              >
-                Link to Github repo
-              </a>
-            </div>
-
-            <ImgCarousel images={NListImages} />
-          </section>
-        </article>
-        <article className="portfolio__project">
-          <h2 className="portfolio__title">Back of the Net</h2>
-          <p className="portfolio__description">
-            A 24-hour hackathon project – a football quiz where you try to name
-            the top scorers in all of Europe’s top 5 leagues.
-          </p>
-          <section className="portfolio__details-container">
-            <div className="portfolio__details">
-              <button className="portfolio__button" onClick={toggleDetails}>
-                {!showDetails ? "./Project_Details" : "./Hide_Details"}
-              </button>
-              {showDetails && (
-                <section>
-                  <p className="portfolio__description">
-                    Front end: React, Sass
-                  </p>
-                  <p className="portfolio__description">
-                    Data: Local JSON, useEffect
-                  </p>
-                  <p className="portfolio__description">
-                    Hackathon: Solo build in 24 hours
-                  </p>
-                </section>
-              )}
-              <a
-                className="portfolio__link"
-                href="https://github.com/awhr95/back-of-the-net"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Link to GitHub repo
-              </a>
-            </div>
-
-            <ImgCarousel images={BackOfTheNet} />
-          </section>
-        </article>
-        <p className="portfolio__link-text">Guithub Link</p>
-      </div>
+      <Project
+        title="NList"
+        description={[
+          "NList is a place to discover and promote volunteering opportunities. The 'air-bnb' of volunteering. I originally built this over a two weeks for my 'Capstone Project' at the end of my coding bootcamp. It is a full stack application with a react front end, a node & express backend with a fully implemented database.",
+          "The pain point NList is built to solve is double sided - to connect volunteers with opportunities, and to connect people or organisations with volunteers. It is a place to discover and promote volunteering opportunities.",
+          "I loved building this app, speaking with potential users to get annecdoctal evidence of the needs for this app, and then building it to solve that problem. I also loved the challenge of building a full stack application in a short time frame, and the satisfaction of seeing it come together.",
+          "The main challenges I found in building it was the building of a data base to suit the needs of the app, something I had never done before.",
+        ]}
+        details={[
+          "Front end: React, Sass, MapBox",
+          "Back end: Node, Express, Knex, JSON Web Token",
+          "Project Management: Figma, Jira, Git",
+        ]}
+        githublink="https://github.com/awhr95/Capstone-nlist-client"
+        images={NListImages}
+      />
+      <Project
+        title="Back of the Net"
+        description={[
+          "A 24-hour hackathon project – a football quiz where you try to name the top scorers in all of Europe’s top 5 leagues.",
+          "I built this project solo in 24 hours for a hackathon. I wanted to build something that would be fun to play, and that would challenge my knowledge of football. I also wanted to build something that would be visually appealing and easy to use.",
+          "I loved the challenge of building this project in such a short time frame, and the satisfaction of seeing it come together. I also loved the challenge of building a project that would be fun to play, and that would challenge my knowledge of football.",
+          "The main challenges I found in building it were the time constraints, and the need to build something that would be fun to play. I also found it challenging to build a project that would be visually appealing and easy to use.",
+        ]}
+        details={[
+          "Front end: React, Sass",
+          "Data: Local JSON, useEffect",
+          "Hackathon: Solo build in 24 hours",
+        ]}
+        githublink="https://github.com/awhr95/back-of-the-net"
+        images={BackOfTheNet}
+      />
     </section>
   );
 };

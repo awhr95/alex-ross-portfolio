@@ -12,48 +12,8 @@
   }
 
   &__subtitle {
-    padding: 1rem 0rem 1rem 4rem;
+    padding: 1rem 0 1rem 4rem;
     margin-top: 2rem;
     font-size: 1.5rem;
-  }
-  &__title {
-    padding: 1rem 0rem 1rem 5rem;
-    font-size: 2.5rem;
-  }
-  &__description {
-    padding: 0 0 0 6rem;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  &__button {
-    margin: 0 0 0 6rem;
-    width: 15rem;
-  }
-
-  &__details-container {
-    display: flex;
-    padding: 1rem 0;
-  }
-  &__details {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 1rem;
-    width: 50%;
-  }
-
-  &__link {
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    width: 15rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    transition: transform 0.2s ease;
-    margin: 0 0 0 6rem;
-  }
-
-  &__link:hover {
-    transform: scale(1.1);
   }
 }
