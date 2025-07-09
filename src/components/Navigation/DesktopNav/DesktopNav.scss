@@ -1,0 +1,25 @@
+@use "../../../styles/partials/breakpoints" as *;
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/typography" as *;
+@use "../../../styles/partials/resets" as *;
+
+.DesktopNavigation {
+  display: none;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__logo {
+      font-size: 1.5rem;
+      margin: 0;
+      font-style: italic;
+      padding: 1rem 1rem 1rem 0;
+      color: $primary-coulour-alternate;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+}

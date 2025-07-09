@@ -1,9 +1,9 @@
-import Header from "../../components/Header/Header";
+import Header from "../../components/Layout/Header/Header";
 import "./Homepage.scss";
-import Hero from "../../components/Hero/Hero";
-import TechStack from "../../components/TechStack/TechStack";
-import PortfolioHomepage from "../../components/PortfolioHomepage/PortfolioHomepage";
-import Footer from "../../components/Footer/Footer";
+import Hero from "../../components/Layout/Hero/Hero";
+import TechStack from "../../components/Layout/TechStack/TechStack";
+import PortfolioHomepage from "../../components/Layout/PortfolioHomepage/PortfolioHomepage";
+import Footer from "../../components/Layout/Footer/Footer";
 
 function Homepage() {
   return (

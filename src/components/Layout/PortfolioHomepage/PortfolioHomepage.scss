@@ -1,0 +1,19 @@
+@use "../../../styles/partials/breakpoints" as *;
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/typography" as *;
+@use "../../../styles/partials/resets" as *;
+
+.portfolio {
+  padding: 0 1rem;
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+
+  &__subtitle {
+    padding: 1rem 0 1rem 4rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}

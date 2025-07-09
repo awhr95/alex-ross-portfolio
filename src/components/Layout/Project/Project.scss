@@ -1,0 +1,67 @@
+@use "../../../styles/partials/breakpoints" as *;
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/typography" as *;
+@use "../../../styles/partials/resets" as *;
+
+.project {
+  margin: 0 auto;
+  max-width: 1280px;
+  &__title {
+    padding: 1rem 0 1rem 5rem;
+    font-size: 2.5rem;
+  }
+
+  &__description {
+    padding: 0 0 0 6rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__button {
+    margin: 0 0 0 6rem;
+    width: 15rem;
+  }
+
+  &__details-container {
+    display: flex;
+    padding: 1rem 0;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 50%;
+    margin: 0 6rem;
+  }
+  &__details-button {
+    width: 10rem;
+    padding: 0 0 0 0rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    margin: 0 6rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    width: 15rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease;
+    margin: 0 0 0 6rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
