@@ -2,20 +2,20 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "./TechStack.scss";
 import "aos/dist/aos.css";
-import HTML from "../../assets/icons/skill-icons--html.svg";
-import ReactIcon from "../../assets/icons/skill-icons--react-dark.svg";
-import Sass from "../../assets/icons/skill-icons--sass.svg";
-import Javascript from "../../assets/icons/skill-icons--javascript.svg";
-import CSS from "../../assets/icons/skill-icons--css.svg";
-import Node from "../../assets/icons/skill-icons--nodejs-dark.svg";
-import Git from "../../assets/icons/skill-icons--git.svg";
-import Express from "../../assets/icons/skill-icons--expressjs-light.svg";
-import Knex from "../../assets/icons/devicon--knexjs-wordmark.svg";
-import MySQL from "../../assets/icons/logos--mysql.svg";
-import TypeScriptIcon from "../../assets/icons/skill-icons--typescript.svg";
-import Tailwind from "../../assets/icons/skill-icons--tailwindcss-dark.svg";
-import GoLang from "../../assets/icons/skill-icons--golang.svg";
-import Python from "../../assets/icons/logos--python.svg";
+import HTML from "../../../assets/icons/skill-icons--html.svg";
+import ReactIcon from "../../../assets/icons/skill-icons--react-dark.svg";
+import Sass from "../../../assets/icons/skill-icons--sass.svg";
+import Javascript from "../../../assets/icons/skill-icons--javascript.svg";
+import CSS from "../../../assets/icons/skill-icons--css.svg";
+import Node from "../../../assets/icons/skill-icons--nodejs-dark.svg";
+import Git from "../../../assets/icons/skill-icons--git.svg";
+import Express from "../../../assets/icons/skill-icons--expressjs-light.svg";
+import Knex from "../../../assets/icons/devicon--knexjs-wordmark.svg";
+import MySQL from "../../../assets/icons/logos--mysql.svg";
+import TypeScriptIcon from "../../../assets/icons/skill-icons--typescript.svg";
+import Tailwind from "../../../assets/icons/skill-icons--tailwindcss-dark.svg";
+import GoLang from "../../../assets/icons/skill-icons--golang.svg";
+import Python from "../../../assets/icons/logos--python.svg";
 
 const TechStack = () => {
   useEffect(() => {

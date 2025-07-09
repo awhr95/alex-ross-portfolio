@@ -1,6 +1,6 @@
 import "./Navlinks.scss";
 import { NavLink } from "react-router-dom";
-import download from "../../assets/icons/material-symbols-light--download.svg";
+import download from "../../../assets/icons/material-symbols-light--download.svg";
 
 const NavLinks = () => {
   return (

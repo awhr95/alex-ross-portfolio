@@ -1,0 +1,10 @@
+@use "../../../styles/partials/breakpoints" as *;
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/typography" as *;
+@use "../../../styles/partials/resets" as *;
+
+.nav-bar {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}

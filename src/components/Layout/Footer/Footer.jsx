@@ -1,7 +1,7 @@
 import "./Footer.scss";
-import Github from "../../assets/icons/mdi--github.svg";
-import Linkedin from "../../assets/icons/logos--linkedin-icon.svg";
-import Email from "../../assets/icons/ic--outline-email.svg";
+import Github from "../../../assets/icons/mdi--github.svg";
+import Linkedin from "../../../assets/icons/logos--linkedin-icon.svg";
+import Email from "../../../assets/icons/ic--outline-email.svg";
 
 const Footer = () => {
   return (

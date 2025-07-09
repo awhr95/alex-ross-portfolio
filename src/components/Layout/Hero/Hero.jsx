@@ -1,6 +1,6 @@
 import "./Hero.scss";
 import { Link } from "react-router-dom";
-import Alex from "../../assets/icons/Alex Ross (1).jpg";
+import Alex from "../../../assets/icons/Alex Ross (1).jpg";
 import { ReactTyped } from "react-typed";
 
 const Hero = () => {

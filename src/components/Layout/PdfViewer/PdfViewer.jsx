@@ -1,6 +1,5 @@
 import "./PdfViewer.scss";
-import React from "react";
-import cv from "../../assets/documents/alex-ross-cv.pdf";
+import cv from "../../../assets/documents/alex-ross-cv.pdf";
 
 const PdfViewer = () => {
   return (

@@ -1,5 +1,5 @@
-import DesktopNavigation from "../DesktopNav/DesktopNavigation";
-import MobileNavigation from "../MobileNav/MobileNavigation";
+import DesktopNavigation from "../DesktopNav/DesktopNav";
+import MobileNavigation from "../MobileNav/MobileNav";
 import "./NavBar.scss";
 
 const NavBar = () => {

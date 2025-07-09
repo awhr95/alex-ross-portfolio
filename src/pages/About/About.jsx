@@ -1,8 +1,8 @@
 import React from "react";
 import "./About.scss";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import PdfViewer from "../../components/PdfViewer/PdfViewer";
+import Header from "../../components/Layout/Header/Header";
+import Footer from "../../components/Layout/Footer/Footer";
+import PdfViewer from "../../components/Layout/PdfViewer/PdfViewer";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
