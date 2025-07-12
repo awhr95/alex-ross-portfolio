@@ -4,11 +4,14 @@
 @use "../../../styles/partials/resets" as *;
 
 .portfolio {
-  padding: 0 1rem;
-
   &__container {
     margin: 0 auto;
     max-width: 1280px;
+  }
+  &__title {
+    padding: 1rem 0 1rem 4rem;
+    font-size: $section-title;
+    text-align: left;
   }
 
   &__subtitle {
