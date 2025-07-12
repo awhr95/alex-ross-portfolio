@@ -3,65 +3,117 @@
 @use "../../../styles/partials/typography" as *;
 @use "../../../styles/partials/resets" as *;
 
+// .project {
+//   margin: 2rem auto;
+//   max-width: 1000px;
+//   padding: 2rem;
+//   background-color: #fff;
+//   border-radius: 1rem;
+//   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+//   transition: transform 0.2s ease;
+//   overflow: hidden;
+
+//   &:hover {
+//     transform: translateY(-5px);
+//   }
+
+//   &__title {
+//     font-size: 2rem;
+//     margin-bottom: 0.5rem;
+//   }
+
+//   &__description {
+//     font-size: 1rem;
+//     margin-bottom: 1rem;
+//     line-height: 1.6;
+
+//     p {
+//       margin-bottom: 0.5rem;
+//     }
+//   }
+
+//   &__details-button,
+//   &__github-link {
+//     background-color: black;
+//     color: white;
+//     border: none;
+//     padding: 0.6rem 1.2rem;
+//     margin: 1rem 0.5rem 0 0;
+//     border-radius: 0.5rem;
+//     cursor: pointer;
+//     text-decoration: none;
+//     transition: background-color 0.2s ease, transform 0.2s ease;
+
+//     &:hover {
+//       background-color: #333;
+//       transform: scale(1.05);
+//     }
+//   }
+
+//   &__details {
+//     margin-top: 1rem;
+//   }
+// }
+
+@use "../../../styles/partials/breakpoints" as *;
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/typography" as *;
+@use "../../../styles/partials/resets" as *;
+
 .project {
-  margin: 0 auto;
-  max-width: 1280px;
+  margin: 0 5rem 1rem 5rem;
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+
+  &__container {
+    padding: 1.5rem 2rem;
+  }
+
   &__title {
-    padding: 1rem 0 1rem 5rem;
-    font-size: 2.5rem;
-  }
-
-  &__description {
-    padding: 0 0 0 6rem;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
-
-  &__button {
-    margin: 0 0 0 6rem;
-    width: 15rem;
-  }
-
-  &__details-container {
+    font-size: 1.75rem;
+    font-weight: bold;
     display: flex;
-    padding: 1rem 0;
-  }
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: 0.5rem;
 
-  &__details {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 1rem;
-    width: 50%;
-    margin: 0 6rem;
-  }
-  &__details-button {
-    width: 10rem;
-    padding: 0 0 0 0rem;
-    border-radius: 0.5rem;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    transition: transform 0.2s ease;
-    margin: 0 6rem;
-
-    &:hover {
-      transform: scale(1.1);
+    &::after {
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+      transform: rotate(0deg);
+      transition: transform 0.3s ease;
     }
   }
 
-  &__link {
+  &--open &__title::after {
+    transform: rotate(0deg);
+  }
+
+  &__description {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+
+  &__details {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__github-link {
+    color: #007bff;
     text-decoration: none;
-    color: black;
-    background-color: white;
-    width: 15rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    transition: transform 0.2s ease;
-    margin: 0 0 0 6rem;
+    font-weight: 500;
 
     &:hover {
-      transform: scale(1.1);
+      text-decoration: underline;
     }
   }
 }
