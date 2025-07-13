@@ -6,6 +6,16 @@ import Gameplay from "../assets/imgs/backofthenet/Gameplay.png";
 import SelectLeague from "../assets/imgs/backofthenet/SelectLeague.png";
 import Winner from "../assets/imgs/backofthenet/Winnercrop.png";
 import Leaderboard from "../assets/imgs/backofthenet/Leaderboard.png";
+import BrainflixDesktop from "../assets/imgs/brainflix/Brainflix_desktop.png";
+import BrainflixMobile from "../assets/imgs/brainflix/Brainflix_mobile.png";
+import BrainflixTablet from "../assets/imgs/brainflix/Brainflix_tablet.png";
+import BrainlixApi from "../assets/imgs/brainflix/Brainflix_api.png";
+import Warehouses from "../assets/imgs/Instock/Warehouses.png";
+import Warehouse from "../assets/imgs/Instock/Warehouse.png";
+import DeleteWarehouse from "../assets/imgs/Instock/Delete_Warehouse.png";
+import AddInventory from "../assets/imgs/Instock/Add_New_inventory.png";
+import EditInventory from "../assets/imgs/Instock/Edit_Invetory.png";
+import Inventory from "../assets/imgs/Instock/Inventory.png";
 
 const projects = [
   {
@@ -50,6 +60,58 @@ const projects = [
       { src: SelectLeague },
       { src: Winner },
       { src: Leaderboard },
+    ],
+  },
+  {
+    id: "brainflix",
+    title: "Brainflix",
+    summary: "A YouTube clone built with React - my first API!",
+    description: [
+      "Brainflix is a YouTube clone built with React. It was my first project that used an API - using axios to fetch data from a JSON file.",
+      "This was an assignment for Brainstation my coding bootcamp. Built over the course of a week, it was my first project that used an API which finally opened my mind to what full stack coding is in reality.",
+      "On the front end, the assignment required the app was responsive in mobile, tablet and desktop as well as accepting comments in a comments section. ",
+      "The front end made use of components and props which was a new concept for me at the time.",
+    ],
+    details: [
+      "Front end: React, Sass, axios",
+      "Back end: Node, Express",
+      "Project Management Git",
+    ],
+    githublink: "",
+    images: [
+      {
+        src: BrainflixDesktop,
+      },
+      { src: BrainflixTablet },
+      { src: BrainflixMobile },
+      { src: BrainlixApi },
+    ],
+  },
+  {
+    id: "instock",
+    title: "InStock",
+    summary: "A full stack application to manage inventory in warehouses.",
+    description: [
+      "InStock is a full stack application to manage inventory in warehouses. It was built as a group project for my coding bootcamp.",
+      "The app allows users to manage warehouses, add and edit inventory, and delete warehouses. It is a fully functional application with a responsive design.",
+      "I built this project with a team of 4 over the course of 2 weeks. I was responsible for the front end, and I also helped with the back end.",
+      "On of the main challenges was the project management of the team. We used Jira to manage our tasks and Git for version control. This was the first project I had worked in a team on one repository, and it was a great learning experience.",
+      "We ran daily standups to discuss our progress and any blockers we had. This helped us to stay on track and to communicate effectively.",
+    ],
+    details: [
+      "Front end: React, Sass",
+      "Back end: Node, Express, Knex",
+      "Database: MySQL",
+      "Project Management: Jira, Git",
+    ],
+    githublink: "",
+    images: [
+      { src: Warehouses },
+      { src: Inventory },
+      { src: Warehouse },
+      { src: DeleteWarehouse },
+      { src: AddInventory },
+      { src: EditInventory },
     ],
   },
 ];
