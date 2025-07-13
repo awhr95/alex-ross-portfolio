@@ -4,25 +4,37 @@
 @use "../../../styles/partials/resets" as *;
 
 .footer {
-  height: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   justify-content: center;
+
+  @include mobile {
+    height: 8rem;
+  }
   @include tablet {
     height: 10rem;
   }
-  @include mobile {
-    height: 8rem;
+  @include desktop {
+    height: 15rem;
+    gap: 2rem;
   }
 
   &__links {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     background-color: $secondary-colour;
+    @include mobile {
+      gap: 2 rem;
+    }
+    @include tablet {
+      gap: 3rem;
+    }
+    @include desktop {
+      gap: 5rem;
+    }
   }
 
   &__icon {
