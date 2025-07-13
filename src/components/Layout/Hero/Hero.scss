@@ -3,186 +3,22 @@
 @use "../../../styles/partials/typography" as *;
 @use "../../../styles/partials/resets" as *;
 
-// .hero {
-//   background-color: $secondary-colour;
-//   @include tablet {
-//     height: 90vh;
-//     padding-top: 6rem;
-//     display: flex;
-//     margin: 0 auto;
-//     max-width: 1280px;
-//   }
-
-//   &__top {
-//     @include tablet {
-//       display: flex;
-//       width: 100%;
-//     }
-//   }
-//   &__mobile-img {
-//     padding-top: 8rem;
-//     display: flex;
-//     justify-content: flex-end;
-
-//     @include tablet {
-//       display: none;
-//     }
-//   }
-
-//   &__picture-container {
-//     width: 70%;
-//     @include tablet {
-//       width: 43%;
-//     }
-//   }
-//   &__pic {
-//     animation: fadeInSlideIn 1s;
-//     width: 16rem;
-//     border-radius: 50%;
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-
-//     @include tablet {
-//       animation-duration: 1.5s;
-//     }
-//   }
-
-//   &__moving-text {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     padding: 0 2rem;
-
-//     @include tablet {
-//       align-items: center;
-//       padding-left: 0;
-//     }
-//   }
-
-//   &__text-container {
-//     width: 70%;
-//   }
-
-//   &__content {
-//     display: none;
-//     @include tablet {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: flex-start;
-//       gap: 2rem;
-//       width: 100%;
-
-//       padding-left: 10%;
-//     }
-//   }
-
-//   &__blurb {
-//     color: $primary-colour;
-//     width: 100%;
-//     height: 14rem;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-around;
-
-//     @include tablet {
-//       width: 70%;
-//     }
-//   }
-
-//   &__contact {
-//     display: none;
-//     @include tablet {
-//       display: flex;
-//       color: black;
-//       width: 90%;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: flex-start;
-//       gap: 1rem;
-//     }
-//   }
-
-//   &__text {
-//     font-size: 0.8rem;
-//     line-height: 1rem;
-//     margin: 0;
-//     color: $primary-colour;
-//   }
-
-//   &__text-link {
-//     text-decoration: none;
-//     color: $primary-coulour-alternate;
-//   }
-
-//   &__title {
-//     height: 17rem;
-//     font-size: 3.2rem;
-//     font-weight: 400;
-//     margin: 0;
-//     color: $primary-colour;
-
-//     padding-bottom: 1rem;
-//   }
-
-//   &__link {
-//     text-decoration: none;
-//     color: $primary-coulour-alternate;
-//   }
-// }
-
-// @keyframes fadeIn {
-//   0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
-
-// @keyframes slideInFromRight {
-//   0% {
-//     transform: translateX(100%);
-//   }
-//   100% {
-//     transform: translateX(0);
-//   }
-// }
-// @keyframes fadeInSlideIn {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(100%);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateX(0);
-//   }
-// }
-@use "../../../styles/partials/breakpoints" as *;
-@use "../../../styles/partials/variables" as *;
-@use "../../../styles/partials/typography" as *;
-@use "../../../styles/partials/resets" as *;
-
 .hero {
   background-color: $secondary-colour;
-
   @include tablet {
     height: 90vh;
     padding-top: 6rem;
     display: flex;
     margin: 0 auto;
     max-width: 1280px;
-    flex-direction: column; // keep column for main stacking
-    gap: 3rem; // space between hero__top and hero__content
   }
 
   &__top {
     @include tablet {
       display: flex;
       width: 100%;
-      gap: 2rem; // spacing between image and text
-      align-items: center; // vertical centering
     }
   }
-
   &__mobile-img {
     padding-top: 8rem;
     display: flex;
@@ -195,14 +31,10 @@
 
   &__picture-container {
     width: 70%;
-
     @include tablet {
-      flex: 0 0 43%; // flex-basis 43%, no grow/shrink
-      max-width: 300px; // optional max width for control
-      width: auto; // reset width so flex-basis takes priority
+      width: 43%;
     }
   }
-
   &__pic {
     animation: fadeInSlideIn 1s;
     width: 16rem;
@@ -218,12 +50,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem; // use gap instead of padding for spacing
+    padding: 0 2rem;
 
     @include tablet {
-      align-items: flex-start; // keep left aligned for readability
-      flex: 1; // take remaining space
-      padding-left: 0; // remove side padding for clean flex layout
+      align-items: center;
+      padding-left: 0;
     }
   }
 
@@ -233,13 +64,13 @@
 
   &__content {
     display: none;
-
     @include tablet {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 2rem; // spacing between contact sections
+      gap: 2rem;
       width: 100%;
+
       padding-left: 10%;
     }
   }
@@ -251,7 +82,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 0.75rem; // consistent vertical spacing
 
     @include tablet {
       width: 70%;
@@ -260,14 +90,14 @@
 
   &__contact {
     display: none;
-
     @include tablet {
       display: flex;
       color: black;
       width: 90%;
+      display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      gap: 1rem; // vertical spacing between contact items
+      gap: 1rem;
     }
   }
 
@@ -289,6 +119,7 @@
     font-weight: 400;
     margin: 0;
     color: $primary-colour;
+
     padding-bottom: 1rem;
   }
 
@@ -315,7 +146,6 @@
     transform: translateX(0);
   }
 }
-
 @keyframes fadeInSlideIn {
   0% {
     opacity: 0;
