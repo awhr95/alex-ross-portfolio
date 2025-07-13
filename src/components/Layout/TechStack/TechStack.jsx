@@ -34,7 +34,7 @@ const TechStack = () => {
                   className="techstack__link"
                   aria-label={`View ${item.title} documentation`}
                   data-tooltip-id={tooltipId}
-                  data-tooltip-content={`View ${item.title} documentation`}
+                  data-tooltip-content={`Open ${item.title} documentation`}
                 >
                   <img
                     className="techstack__icon"
@@ -75,9 +75,9 @@ const TechStack = () => {
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   className="techstack__link"
-                  aria-label={`View ${item.title} documentation`}
+                  aria-label={`Open ${item.title} documentation`}
                   data-tooltip-id={tooltipId}
-                  data-tooltip-content={`View ${item.title} documentation`}
+                  data-tooltip-content={`Open ${item.title} documentation`}
                 >
                   <img
                     className="techstack__icon"

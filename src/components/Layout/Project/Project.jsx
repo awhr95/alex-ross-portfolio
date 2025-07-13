@@ -13,6 +13,7 @@ const Project = ({
 }) => {
   const [isOpen, setIsOpen] = useState(initiallyOpen);
   const [showDetails, setShowDetails] = useState(false);
+  const [showFullDescription, setShowFullDescription] = useState(false);
 
   const toggleOpen = () => {
     setIsOpen((prev) => !prev);
@@ -20,6 +21,14 @@ const Project = ({
   const toggleDetails = () => {
     setShowDetails(!showDetails);
   };
+
+  const toggleDescription = () => {
+    setShowFullDescription(!showFullDescription);
+  };
+
+  const visibleDescription = showFullDescription
+    ? description
+    : description.slice(0, 2);
   return (
     <section className="project">
       <div className="project__container">
@@ -33,12 +42,20 @@ const Project = ({
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <div className="project__description">
-                {description.map((paragraph, index) => (
+                {visibleDescription.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
+                {description.length > 2 && (
+                  <button
+                    className="project__toggle-description"
+                    onClick={toggleDescription}
+                  >
+                    {showFullDescription ? "read less" : "read more"}
+                  </button>
+                )}
               </div>
               <button
                 className="project__details-button"
